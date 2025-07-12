@@ -1,10 +1,11 @@
-function handleRSVP() {
+const rsvpbtn = document.querySelector(".rsvp-button");
+rsvpbtn.onclick = function () {
+  alert("called");
   const responseDiv = document.getElementById("responseMessage");
-  const button = document.querySelector(".rsvp-button");
 
   // Change button text and show response
-  button.innerHTML = "🎉 Thanks for RSVPing! 🎉";
-  button.style.background = "linear-gradient(45deg, #ff6b6b, #ee5a24)";
+  rsvpbtn.innerHTML = "🎉 Thanks for RSVPing! 🎉";
+  rsvpbtn.style.background = "linear-gradient(45deg, #ff6b6b, #ee5a24)";
 
   // Show success message
   responseDiv.innerHTML = "🎊 Awesome! Can't wait to see you there! 🎊";
@@ -12,7 +13,7 @@ function handleRSVP() {
 
   // Add extra confetti effect
   createExtraConfetti();
-}
+};
 
 function createExtraConfetti() {
   for (let i = 0; i < 20; i++) {

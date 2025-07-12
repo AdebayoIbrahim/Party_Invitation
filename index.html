@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>End of Year Party Invitation</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="script.js">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
     <!-- Floating confetti -->
     <div class="confetti"></div>
     <div class="confetti"></div>
@@ -20,70 +20,66 @@
     <div class="confetti"></div>
 
     <div class="invitation-card">
-        <!-- Sparkle effects -->
-        <div class="sparkle"></div>
-        <div class="sparkle"></div>
-        <div class="sparkle"></div>
+      <!-- Sparkle effects -->
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
 
-        <!-- Card Header -->
-        <div class="card-header">
-            <div class="party-emoji">🎉</div>
-            <h1 class="main-title">You're Invited!</h1>
-            <p class="subtitle">End of Year Celebration Party</p>
+      <!-- Card Header -->
+      <div class="card-header">
+        <div class="party-emoji">🎉</div>
+        <h1 class="main-title">You're Invited!</h1>
+        <p class="subtitle">End of Year Celebration Party</p>
+      </div>
+
+      <!-- Card Body with Details -->
+      <div class="card-body">
+        <div class="detail-item">
+          <div class="detail-icon">📅</div>
+          <div class="detail-text">
+            <span class="detail-label">When</span>
+            <div class="detail-value">Friday, December 15th, 2024</div>
+          </div>
         </div>
 
-        <!-- Card Body with Details -->
-        <div class="card-body">
-            <div class="detail-item">
-                <div class="detail-icon">📅</div>
-                <div class="detail-text">
-                    <span class="detail-label">When</span>
-                    <div class="detail-value">Friday, December 15th, 2024</div>
-                </div>
-            </div>
-
-            <div class="detail-item">
-                <div class="detail-icon">⏰</div>
-                <div class="detail-text">
-                    <span class="detail-label">Time</span>
-                    <div class="detail-value">6:00 PM - 10:00 PM</div>
-                </div>
-            </div>
-
-            <div class="detail-item">
-                <div class="detail-icon">📍</div>
-                <div class="detail-text">
-                    <span class="detail-label">Where</span>
-                    <div class="detail-value">School Main Hall</div>
-                </div>
-            </div>
-
-            <div class="detail-item">
-                <div class="detail-icon">🎭</div>
-                <div class="detail-text">
-                    <span class="detail-label">Theme</span>
-                    <div class="detail-value">Masquerade & Memories</div>
-                </div>
-            </div>
-
-            <div class="detail-item">
-                <div class="detail-icon">🍕</div>
-                <div class="detail-text">
-                    <span class="detail-label">Food & Fun</span>
-                    <div class="detail-value">Pizza, Games & Dancing!</div>
-                </div>
-            </div>
+        <div class="detail-item">
+          <div class="detail-icon">⏰</div>
+          <div class="detail-text">
+            <span class="detail-label">Time</span>
+            <div class="detail-value">6:00 PM - 10:00 PM</div>
+          </div>
         </div>
 
-        <!-- RSVP Section -->
-        <div class="rsvp-section">
-            <button class="rsvp-button" onclick="handleRSVP()">
-                ✨ Count Me In! ✨
-            </button>
-            <div id="responseMessage" class="response-message"></div>
+        <div class="detail-item">
+          <div class="detail-icon">📍</div>
+          <div class="detail-text">
+            <span class="detail-label">Where</span>
+            <div class="detail-value">School Main Hall</div>
+          </div>
         </div>
+
+        <div class="detail-item">
+          <div class="detail-icon">🎭</div>
+          <div class="detail-text">
+            <span class="detail-label">Theme</span>
+            <div class="detail-value">Masquerade & Memories</div>
+          </div>
+        </div>
+
+        <div class="detail-item">
+          <div class="detail-icon">🍕</div>
+          <div class="detail-text">
+            <span class="detail-label">Food & Fun</span>
+            <div class="detail-value">Pizza, Games & Dancing!</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RSVP Section -->
+      <div class="rsvp-section">
+        <button class="rsvp-button">✨ Count Me In! ✨</button>
+        <div id="responseMessage" class="response-message"></div>
+      </div>
     </div>
-
-    
-</body>
+  </body>
 </html>

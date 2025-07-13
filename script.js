@@ -54,7 +54,7 @@ function renderConfetti(amount, duration) {
   }, duration);
   // Confetti-js-scripts -end
 }
-renderConfetti(10, 400);
+renderConfetti(20, 400);
 
 // formsubmission
 const public_key = "D-H-WbuODWxnvG2dB";

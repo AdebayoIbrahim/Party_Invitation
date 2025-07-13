@@ -299,35 +299,34 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.formfiled div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
 
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
+.formfiled label {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
 
-  label {
-    color: black;
-    font-weight: 500;
-    font-size: 1.2rem;
-  }
-
-  input {
+.formfiled input {
+  border: none;
+  outline: none;
+  padding: 12px 8px;
+  border-radius: 0.5rem;
+  box-shadow: 0 -1px 8px pink;
+  background: #90beb085;
+  font-size: 1.1rem;
+  &:focus {
     border: none;
     outline: none;
-    padding: 12px 8px;
-    border-radius: 0.5rem;
-    box-shadow: 0 -1px 8px pink;
-    background: #90beb085;
-    font-size: 1.1rem;
-    &:focus {
-      border: none;
-      outline: none;
-    }
-    &::placeholder {
-      font-size: 0.9rem;
-      color: #050505b1;
-    }
+  }
+  &::placeholder {
+    font-size: 0.9rem;
+    color: #050505b1;
   }
 }
 
@@ -353,5 +352,17 @@ div.loading {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media only screen and (width <= 785px) {
+  .main_cta {
+    grid-template-columns: repeat(1, 1fr);
+    margin-block: 2rem;
+    gap: 2rem;
+    margin-inline: 0.5rem;
+  }
+  .rsvp-button {
+    font-size: 1rem;
   }
 }

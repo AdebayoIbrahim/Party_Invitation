@@ -120,7 +120,7 @@ const intializeresponse = () => {
   // Change button text and show response
   rsvpbtn.innerHTML = "🎉 Thanks for RSVPing! 🎉";
   rsvpbtn.style.background = "linear-gradient(45deg, #ff6b6b, #ee5a24)";
-
+  rsvpbtn.setAttribute("disabled", true);
   // Show success message
   responseDiv.innerHTML = "🎊 Awesome! Can't wait to see you there! 🎊";
   responseDiv.className = "response-message success show";

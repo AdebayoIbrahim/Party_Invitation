@@ -80,7 +80,7 @@ rsvpbtn.addEventListener("click", (e) => {
     from_name: `${fullname?.value}`,
     from_email: `${email?.value}`,
     message: `${message}`,
-    to_name: "Yusuf",
+    to_name: "Arumaisoh",
     reply_to: `${email?.value}`,
   };
 

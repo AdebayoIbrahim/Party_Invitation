@@ -77,10 +77,10 @@ rsvpbtn.addEventListener("click", (e) => {
   const message = "Excited to attend your event!";
   //form params
   const formParams = {
-    from_name: `${fullname}`,
+    from_name: `${fullname?.value}`,
     from_email: `${email?.value}`,
     message: `${message}`,
-    to_name: "Yusuf",
+    to_name: "Arumaisoh",
     reply_to: `${email?.value}`,
   };
 
